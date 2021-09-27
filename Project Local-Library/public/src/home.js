@@ -1,3 +1,8 @@
+//actual helper function
+function sortArray(array){
+  return array.sort((one, two) => one.count < two.count ? 1 : -1).splice(0, 5);
+}
+
 function getTotalBooksCount(books) {
   return books.length;
 }
